@@ -1,4 +1,7 @@
 <template>
+  <div class="preloader" :class="{hidden: hidePreloader}">
+    loading...
+  </div>
   <div class="bg"></div>
   <nav>
     <div class="inner">
@@ -17,7 +20,23 @@
 </template>
 
 <script>
-
+  export default {
+    data() {
+      return {
+        hidePreloader: false
+      }
+    },
+    methods: {
+      togglePreloader() {
+        this.hidePreloader = true;
+      }
+    },
+    mounted() {
+      setTimeout(() => {
+        this.togglePreloader();
+      }, 1000);
+    }
+  }
 </script>
 
 <style lang="scss" src="@/_styles/index.scss"></style>
