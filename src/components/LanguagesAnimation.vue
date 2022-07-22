@@ -40,14 +40,23 @@
 
                 const time = Date.now() / 1000;
                 this.ctx.clearRect(0,0,this.canvas.width,this.canvas.height);
-                this.ctx.fillStyle = 'green';
+
+                this.ctx.font = `${spacing / 10}px "FontAwesome"`;
+                this.ctx.fillStyle = "white";
+                
 
                 for(const i in this.logos) {
-                    this.ctx.font = `${spacing / 10}px "FontAwesome"`;
-                    this.ctx.fillStyle = "white";
-
                     const size = this.ctx.measureText(this.logos[i])
                     const txtw = size.width
+
+                    this.ctx.fillStyle = "rgba(0,0,0,.125)";
+
+                    this.ctx.fillText(this.logos[i], 
+                        (this.canvas.width / 2) - (txtw / 2) + Math.sin(time + ((i + 1) * (360 / this.logos.length))) * (spacing / 3),
+                        (this.canvas.height / 2) + (spacing / 20) + Math.cos(time + ((i + 1) * (360 / this.logos.length))) * (spacing / 3) + 4,
+                    )
+
+                    this.ctx.fillStyle = "white";
 
                     this.ctx.fillText(this.logos[i], 
                         (this.canvas.width / 2) - (txtw / 2) + Math.sin(time + ((i + 1) * (360 / this.logos.length))) * (spacing / 3),
