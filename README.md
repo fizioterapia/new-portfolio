@@ -1,4 +1,14 @@
-# portfolio
+# New Portfolio
+My new portfolio currently in development.  
+
+### Developed using following versions
+```
+$ node -v
+v16.16.0
+
+$ yarn -v
+1.22.19
+```
 
 ## Project setup
 ```
