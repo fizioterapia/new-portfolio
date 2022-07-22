@@ -1,0 +1,40 @@
+div.about {
+    display: flex;
+    flex-direction: column;
+    
+    width: clamp(50%, 400px, 100%);
+    min-height: 100%;
+    margin: 0 auto;
+    
+    align-items: center;
+    justify-content: center;
+
+    div.card {
+        display: block;
+        text-align: center;
+
+        p {
+            white-space: pre-line;
+        }
+
+        div.buttons {
+            margin-top: 1rem;
+
+            button {
+                background: none;
+                border: 2px solid var(--primary);
+                color: var(--primary);
+                padding: 1rem 2rem;
+                font-size: 1.25rem;
+                border-radius: 4px;
+                outline: none;
+
+                transition: 0.3s all ease-in-out;
+            }
+
+            button:hover, button:focus {
+                filter: brightness(1.25);
+            }
+        }
+    }
+}

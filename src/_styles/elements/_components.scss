@@ -43,7 +43,7 @@
 
         padding: 16px;
 
-        background: white;
+        background: var(--dark);
 
         z-index: 99;
 
@@ -64,8 +64,6 @@
 
                 width: 1rem;
                 height: 1rem;
-                
-                filter: brightness(0);
 
                 svg {
                     fill: var(--text-secondary);
@@ -75,7 +73,9 @@
             }
 
             button:hover, button:focus {
-                filter: brightness(1);
+                svg {
+                    fill: var(--primary);
+                }
                 cursor: pointer;
             }
         }

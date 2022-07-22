@@ -28,6 +28,7 @@
 import ProjectImage from '@/components/ProjectImage.vue';
 
 export default {
+    name: 'ProjectsView',
     components: {
         ProjectImage
     },
