@@ -10,6 +10,11 @@ $ yarn -v
 1.22.19
 ```
 
+## TODO
+ - add contact
+ - add font awesome
+ - make more responsive on mobile devices or smaller screens
+
 ## Project setup
 ```
 yarn install
