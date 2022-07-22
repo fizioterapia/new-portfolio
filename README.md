@@ -11,6 +11,7 @@ $ yarn -v
 ```
 
 ## TODO
+ - add breadcrumbs to navbar (mobile version of navbar)
  - create better about page
  - add font awesome
  - make more responsive on mobile devices or smaller screens
