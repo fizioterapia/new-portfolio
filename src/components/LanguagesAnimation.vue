@@ -50,10 +50,11 @@
             }
         },
         mounted() {
-            window.addEventListener("resize", this.resize);
-
             this.canvas = document.getElementById("vue-c-languagesanimation");
             this.ctx = this.canvas.getContext('2d');
+
+            window.addEventListener("resize", this.resize);
+            this.resize();
         
             if(this.interval) {
                 clearInterval(this.interval);
