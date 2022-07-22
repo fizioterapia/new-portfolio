@@ -22,7 +22,7 @@ div.home {
             height: 100%;
 
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
 
             .column {
                 display: flex;
@@ -33,6 +33,30 @@ div.home {
                 color: var(--text-secondary);
                 width: 40%;
                 height: 100%;
+            }
+
+            div.buttons {
+                margin-top: 1rem;
+
+                button {
+                    background: none;
+                    border: 2px solid var(--primary);
+                    color: var(--primary);
+                    padding: 1rem 2rem;
+                    font-size: 1.25rem;
+                    border-radius: 4px;
+                    outline: none;
+
+                    transition: 0.3s all ease-in-out;
+                }
+
+                button:hover, button:focus {
+                    filter: brightness(1.25);
+                }
+            }
+
+            .column:nth-child(1) {
+                margin-left: 4rem;
             }
 
             @media only screen and (max-width: 595px) {
@@ -46,6 +70,14 @@ div.home {
                     justify-content: center;
 
                     text-align: center;
+                }
+
+                .column:nth-child(1) {
+                    margin-left: 0;
+                }
+
+                .column:nth-child(2) {
+                    width: 100%;
                 }
             }
             

@@ -4,6 +4,10 @@
 
 <style scoped>
     @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+    canvas {
+        background: var(--primary);
+    }
 </style>
 
 <script>
@@ -42,9 +46,12 @@
                     this.ctx.font = `${spacing / 10}px "FontAwesome"`;
                     this.ctx.fillStyle = "white";
 
+                    const size = this.ctx.measureText(this.logos[i])
+                    const txtw = size.width
+
                     this.ctx.fillText(this.logos[i], 
-                        (this.canvas.width / 2) + Math.sin(time + ((i + 1) * (360 / this.logos.length))) * (spacing / 3),
-                        (this.canvas.height / 2) + Math.cos(time + ((i + 1) * (360 / this.logos.length))) * (spacing / 3),
+                        (this.canvas.width / 2) - (txtw / 2) + Math.sin(time + ((i + 1) * (360 / this.logos.length))) * (spacing / 3),
+                        (this.canvas.height / 2) + (spacing / 20) + Math.cos(time + ((i + 1) * (360 / this.logos.length))) * (spacing / 3),
                     )
                 }
             }

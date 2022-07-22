@@ -5,6 +5,10 @@
         <div class="column">
           <h1>Tomasz Gradek</h1>
           <TypeWriter :texts="texts" />
+
+          <div class="buttons">
+            <button @click="this.$router.push('/projects');">Check out my projects</button>
+          </div>
         </div>
         <div class="column">
           <LanguagesAnimation />
