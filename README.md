@@ -11,7 +11,7 @@ $ yarn -v
 ```
 
 ## TODO
- - add contact
+ - create better about page
  - add font awesome
  - make more responsive on mobile devices or smaller screens
 
