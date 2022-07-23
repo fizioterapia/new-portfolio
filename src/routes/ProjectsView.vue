@@ -51,7 +51,8 @@ export default {
                 {
                     name: "IT Shop",
                     description: `Simple shop created to learn more of Vue 3 and learn how to properly use Express.js
-                    There is authentication, adding items to cart, browsing items and more.`,
+                    There is authentication, adding items to cart, browsing items and more.
+                    I'm planning to rewrite this application, because of few bugs I encountered during fresh installation.`,
                     image: require("@/_assets/img/projects/shop.png"),
                     technologies: ["Vue.js 3", "Vuex", "Node.js", "Express.js", "JWT", "MySQL", "SASS"],
                     links: [
