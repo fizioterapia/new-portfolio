@@ -15,6 +15,7 @@ Favicon is from [FlatIcon](https://www.flaticon.com/).
 
 ## TODO
  - add meta tags
+ - change outlined btns
 
 ## Project setup
 ```

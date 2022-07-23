@@ -13,6 +13,7 @@
                 text: "",
                 id: 0,
                 direction: 1,
+                delay: false,
                 interval: null
             }
         },
@@ -21,8 +22,19 @@
         },
         methods: {
             animate() {
+                if(this.delay == true) {
+                    return false;
+                }
+
                 if (this.text == this.texts[this.id]) {
                     this.direction = -this.direction;
+                    
+                    this.delay = true;
+                    setTimeout(() => {
+                        this.delay = false
+                        this.text = this.text.slice(0, this.direction);
+                    }, 1500);
+                    return false;
                 }
 
                 if (this.direction > 0) {
@@ -48,7 +60,7 @@
 
             this.interval = setInterval(() => {
                 this.animate()
-            }, 250);
+            }, 150);
         }
     }
 </script>
