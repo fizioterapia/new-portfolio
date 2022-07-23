@@ -38,7 +38,7 @@
             draw() {
                 const spacing = this.canvas.width > this.canvas.height ? this.canvas.height : this.canvas.width;
 
-                const time = Date.now() / 1000;
+                const time = Date.now() / 2500;
                 this.ctx.clearRect(0,0,this.canvas.width,this.canvas.height);
 
                 this.ctx.font = `${spacing / 10}px "FontAwesome"`;
