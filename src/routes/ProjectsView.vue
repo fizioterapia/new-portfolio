@@ -36,37 +36,62 @@ export default {
         return {
             projects: [
                 {
-                    name: "testowy",
-                    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris justo purus, tincidunt ut magna in, aliquam euismod lorem.
-                    Phasellus dui sem, auctor non fringilla id, auctor vitae ante.
-                    Suspendisse fermentum, sem eget facilisis aliquet, eros tortor feugiat libero, eget tempus erat ante a tortor.
-                    Pellentesque lacinia, tellus a sagittis posuere.`,
-                    image: require("@/_assets/img/project.png"),
-                    technologies: ["vue.js 3", "js"],
+                    name: "cheetahden.tech",
+                    description: `Game servers for game called Open Fortress.
+                    I'm creator and developer of those servers.`,
+                    image: require("@/_assets/img/projects/cheetah.png"),
+                    technologies: ["Nuxt.js", "SASS", "SourcePawn", "PHP", "MySQL", "Linux (Debian)"],
                     links: [
                         {
-                            name: "github",
-                            href: "http://github.com"
+                            name: "Website",
+                            href: "https://cheetahden.tech"
                         }
                     ]
                 },
                 {
-                    name: "testowy 2",
-                    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris justo purus, tincidunt ut magna in, aliquam euismod lorem.
-                    Phasellus dui sem, auctor non fringilla id, auctor vitae ante.
-                    Suspendisse fermentum, sem eget facilisis aliquet, eros tortor feugiat libero, eget tempus erat ante a tortor.
-                    Pellentesque lacinia, tellus a sagittis posuere.`,
-                    image: require("@/_assets/vue.png"),
-                    technologies: ["vue.js 3", "js"],
+                    name: "IT Shop",
+                    description: `Simple shop created to learn more of Vue 3 and learn how to properly use Express.js
+                    There is authentication, adding items to cart, browsing items and more.`,
+                    image: require("@/_assets/img/projects/shop.png"),
+                    technologies: ["Vue.js 3", "Vuex", "Node.js", "Express.js", "JWT", "MySQL", "SASS"],
                     links: [
                         {
-                            name: "vue website",
-                            href: "http://vuejs.org"
+                            name: "GitHub",
+                            href: "https://github.com/fizioterapia/it-shop"
                         }
                     ]
-                }
+                },
+                {
+                    name: "Yet Another Boring Todo List (YABTL)",
+                    description: `Game server for game called Garry's Mod.
+                    I'm creator and developer of this server.`,
+                    image: require("@/_assets/img/projects/yabtl.png"),
+                    technologies: ["Vue.js 3", "SASS"],
+                    links: [
+                        {
+                            name: "GitHub",
+                            href: "https://github.com/fizioterapia/YABTL"
+                        },
+                        {
+                            name: "Preview",
+                            href: "https://fizi.pw/yabtl/"
+                        }
+                    ]
+                },
+                {
+                    name: "Contest Application",
+                    description: `Winning application for Vue.js 3 & Node.js contest on my university.
+                    Contest was organized by company called Focus Telecom Poland.
+                    Application isn't working properly, since every contestant lost access to Dialer library and you can only use it to display "slideshow".`,
+                    image: require("@/_assets/img/projects/course.png"),
+                    technologies: ["Vue.js 3", "Vuex", "Node.js", "Express.js", "socket.io", "SASS"],
+                    links: [
+                        {
+                            name: "GitHub",
+                            href: "https://github.com/fizioterapia/Konkurs-Focus-Telecom"
+                        }
+                    ]
+                },
             ]
         }
     }
