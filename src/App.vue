@@ -61,7 +61,8 @@
       }
     },
     watch: {
-      $route (){
+      $route (to) {
+        document.title = "Portfolio - " + to.meta.title;
         this.navVisible = false;
       }
     },

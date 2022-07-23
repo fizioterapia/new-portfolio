@@ -36,6 +36,23 @@ export default {
         return {
             projects: [
                 {
+                    name: "This Portfolio",
+                    description: `My new portfolio written using Vue.js 3 and SASS.
+                    I have tried to learn more things and make it more responsive than the previous one.`,
+                    image: require("@/_assets/img/projects/portfolio.png"),
+                    technologies: ["Vue.js 3", "JavaScript", "SASS"],
+                    links: [
+                        {
+                            name: "Website",
+                            href: "https://fizi.pw"
+                        },
+                        {
+                            name: "GitHub",
+                            href: "https://github.com/fizioterapia/new-portfolio"
+                        }
+                    ]
+                },
+                {
                     name: "cheetahden.tech",
                     description: `My personal project, gameservers for game called Open Fortress.
                     I'm developer of the website and plugins for server using SourcePawn.
