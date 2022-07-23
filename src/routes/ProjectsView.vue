@@ -37,8 +37,9 @@ export default {
             projects: [
                 {
                     name: "cheetahden.tech",
-                    description: `Game servers for game called Open Fortress.
-                    I'm creator and developer of those servers.`,
+                    description: `My personal project, gameservers for game called Open Fortress.
+                    I'm developer of the website and plugins for server using SourcePawn.
+                    Servers are being host on my dedicated machine with many bash helper scripts.`,
                     image: require("@/_assets/img/projects/cheetah.png"),
                     technologies: ["Nuxt.js", "SASS", "SourcePawn", "PHP", "MySQL", "Linux (Debian)"],
                     links: [
@@ -49,23 +50,10 @@ export default {
                     ]
                 },
                 {
-                    name: "IT Shop",
-                    description: `Simple shop created to learn more of Vue 3 and learn how to properly use Express.js
-                    There is authentication, adding items to cart, browsing items and more.
-                    I'm planning to rewrite this application, because of few bugs I encountered during fresh installation.`,
-                    image: require("@/_assets/img/projects/shop.png"),
-                    technologies: ["Vue.js 3", "Vuex", "Node.js", "Express.js", "JWT", "MySQL", "SASS"],
-                    links: [
-                        {
-                            name: "GitHub",
-                            href: "https://github.com/fizioterapia/it-shop"
-                        }
-                    ]
-                },
-                {
                     name: "Yet Another Boring Todo List (YABTL)",
-                    description: `Game server for game called Garry's Mod.
-                    I'm creator and developer of this server.`,
+                    description: `Yet Another Boring Todo List.
+                    One of projects I made to learn how to use Vue.js.
+                    You can change priority, add more items and remove them.`,
                     image: require("@/_assets/img/projects/yabtl.png"),
                     technologies: ["Vue.js 3", "SASS"],
                     links: [
