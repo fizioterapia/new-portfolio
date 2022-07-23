@@ -2,6 +2,9 @@
   <div class="preloader" :class="{hidden: hidePreloader}">
     loading...
   </div>
+  <div class="chee" :class="{ visible: easterEgg }">
+
+  </div>
   <div class="bg"></div>
   <nav>
     <div class="inner">
@@ -29,15 +32,33 @@
   export default {
     data() {
       return {
-        hidePreloader: false
+        hidePreloader: false,
+        pattern: ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'],
+        current: 0,
+        easterEgg: false
       }
     },
     methods: {
+      keyHandler(e) {
+        if (this.pattern.indexOf(e.key) < 0 || e.key !== this.pattern[this.current]) {
+          this.current = 0;
+          return;
+        }
+
+        this.current++;
+
+        if (this.pattern.length === this.current) {
+          this.current = 0;
+          this.easterEgg = true
+        }
+      },
       togglePreloader() {
         this.hidePreloader = true;
       }
     },
     mounted() {
+      document.addEventListener('keydown', this.keyHandler, false);
+
       setTimeout(() => {
         this.togglePreloader();
       }, 1000);

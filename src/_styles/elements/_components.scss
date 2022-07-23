@@ -121,6 +121,30 @@
     }
 }
 
+.chee {
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    bottom: -100px;
+    right: -100px;
+
+    opacity: 0;
+
+    background-image: url("@/_assets/img/chee.png");
+
+    z-index: 999;
+
+    transform: rotateY(-180deg) rotateZ(-25deg);
+
+    transition: 0.5s all ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
 @keyframes blink {
     0% {
         opacity: 1;
