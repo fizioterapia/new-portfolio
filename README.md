@@ -10,10 +10,8 @@ $ yarn -v
 1.22.19
 ```
 
-## TODO
- - create better about page
- - add font awesome
- - make more responsive on mobile devices or smaller screens
+## Images
+Favicon is from [FlatIcon](https://www.flaticon.com/).
 
 ## Project setup
 ```
