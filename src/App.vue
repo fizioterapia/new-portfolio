@@ -12,17 +12,29 @@
         fizi.pw
       </div>
       <div class="nav--button" @click="this.navVisible = !this.navVisible">
-        test
+        <font-awesome-icon icon="fa-solid fa-bars" />
       </div>
       <Transition name="slide" mode="out-in">
         <div class="nav--links" v-if="navVisible || width > 595">
           <div class="nav--button" @click="this.navVisible = !this.navVisible">
-            test
+            <font-awesome-icon icon="fa-solid fa-bars" />
           </div>
-          <router-link to="/">Home</router-link>
-          <router-link to="/about">About me</router-link>
-          <router-link to="/projects">Projects</router-link>
-          <router-link to="/contact">Contact</router-link>
+          <router-link to="/">
+            <font-awesome-icon icon="fa-solid fa-house" />
+            Home
+          </router-link>
+          <router-link to="/about">
+            <font-awesome-icon icon="fa-solid fa-address-card" />
+            About me
+          </router-link>
+          <router-link to="/projects">
+            <font-awesome-icon icon="fa-solid fa-bars-progress" />
+            Projects
+          </router-link>
+          <router-link to="/contact">
+            <font-awesome-icon icon="fa-solid fa-envelope" />
+            Contact
+          </router-link>
         </div>
       </Transition>
     </div>

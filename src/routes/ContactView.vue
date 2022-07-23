@@ -4,7 +4,7 @@
         <a href="#">
             <div class="box">
                 <div class="icon">
-                    TODO
+                    <font-awesome-icon icon="fa-solid fa-envelope" />
                 </div>
                 <div class="name">
                     E-mail
@@ -14,7 +14,7 @@
         <a href="#">
             <div class="box">
                 <div class="icon">
-                    TODO
+                    <font-awesome-icon icon="fa-brands fa-linkedin" />
                 </div>
                 <div class="name">
                     LinkedIn
@@ -24,7 +24,7 @@
         <a href="#">
             <div class="box">
                 <div class="icon">
-                    TODO
+                    <font-awesome-icon icon="fa-brands fa-github" />
                 </div>
                 <div class="name">
                     GitHub
@@ -34,7 +34,7 @@
         <a href="#">
             <div class="box">
                 <div class="icon">
-                    TODO
+                    <font-awesome-icon icon="fa-brands fa-facebook" />
                 </div>
                 <div class="name">
                     Facebook
@@ -44,7 +44,7 @@
         <a href="#">
             <div class="box">
                 <div class="icon">
-                    TODO
+                    <font-awesome-icon icon="fa-brands fa-telegram" />
                 </div>
                 <div class="name">
                     Telegram
