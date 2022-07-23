@@ -3,16 +3,13 @@ nav {
 
     position: sticky;
     top: 0;
+    z-index: 1;
 
     background-color: var(--dark);
 
     .inner {
         display: flex;
-
-        div {
-            display: inline-flex;
-            box-sizing: border-box;
-        }
+        align-items: center;
 
         .nav--name {
             margin-left: 16px;
@@ -26,8 +23,14 @@ nav {
             font-weight: 700;
         }
 
+        .nav--button {
+            margin: 0;
+            padding: 16px 32px;
+        }
+
         .nav--links {
             margin: 0;
+            display: inline-flex;
 
             a {
                 color: var(--text-secondary);
@@ -44,6 +47,71 @@ nav {
             a:hover, a:focus, a.router-link-active {
                 color: var(--text-primary);
                 border-bottom: 2px solid var(--primary);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 595px) {
+        .inner {
+            .nav--button {
+                display: flex;
+            }
+
+            .nav--links {
+                //display: none !important;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+
+                right: 0;
+                top: 0;
+
+                position: fixed;
+                width: 75%;
+
+                background: var(--dark);
+
+                z-index: 999;
+
+                transition: all 0.75s ease-out;
+            }
+
+            .hidden {
+                right: -100%;
+                pointer-events: none;
+            }
+        }
+
+        .slide-enter-active,
+        .slide-leave-active {
+        transition: all 0.75s ease-in-out;
+        }
+
+        .slide-enter-to {
+        position: absolute;
+        transform: translateX(0);
+        }
+
+        .slide-enter-from {
+        position: absolute;
+        transform: translateX(100%);
+        }
+
+        .slide-leave-to {
+        position: absolute;
+        transform: translateX(100%);
+        }
+
+        .slide-leave-from {
+        position: absolute;
+        transform: translateX(0);
+        }
+    }
+    
+    @media only screen and (min-width: 596px) {
+        .inner {
+            .nav--button {
+                display: none !important;
             }
         }
     }
