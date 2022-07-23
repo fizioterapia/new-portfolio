@@ -4,14 +4,14 @@
       <div class="split">
         <div class="column">
           <h1>Tomasz Gradek</h1>
-          <TypeWriter :texts="texts" />
+          <c-typewriter :texts="texts" />
 
           <div class="buttons">
             <button @click="this.$router.push('/about');">Learn about me</button>
           </div>
         </div>
         <div class="column">
-          <LanguagesAnimation />
+          <c-animation />
         </div>
       </div>
     </div>
@@ -30,8 +30,8 @@
       }
     },
     components: {
-      TypeWriter,
-      LanguagesAnimation
+      "c-typewriter": TypeWriter,
+      "c-animation": LanguagesAnimation
     }
   }
 </script>

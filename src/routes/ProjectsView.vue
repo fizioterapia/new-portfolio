@@ -3,7 +3,7 @@
         <div class="project" v-for="(project, index) in projects" :key="index">
             <div class="split">
                 <div class="column c-30">
-                    <ProjectImage :src="project.image" />
+                    <c-project-image :src="project.image" />
                 </div>
                 <div class="column c-70">
                     <h1>{{ project.name }}</h1>
@@ -30,7 +30,7 @@ import ProjectImage from '@/components/ProjectImage.vue';
 export default {
     name: 'ProjectsView',
     components: {
-        ProjectImage
+        "c-project-image": ProjectImage
     },
     data() {
         return {
