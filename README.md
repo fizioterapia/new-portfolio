@@ -13,6 +13,9 @@ $ yarn -v
 ## Images
 Favicon is from [FlatIcon](https://www.flaticon.com/).
 
+## TODO
+ - add meta tags
+
 ## Project setup
 ```
 yarn install
