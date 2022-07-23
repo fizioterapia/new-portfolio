@@ -31,7 +31,7 @@
 
         position: fixed;
 
-        max-width: 50%;
+        width: 80vw;
 
         pointer-events: none;
 
@@ -82,8 +82,8 @@
 
         .content {
             img {
-                width: 80%;
-                max-height: 80%;
+                width: 100%;
+                height: auto;
             }
             text-align: center;
         }
