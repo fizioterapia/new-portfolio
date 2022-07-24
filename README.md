@@ -13,6 +13,10 @@ $ yarn -v
 ## Images
 Favicon is from [FlatIcon](https://www.flaticon.com/).
 
+## TODO
+ - introduce SSR
+ - replace hard coded meta tags with vue-meta
+
 ## Project setup
 ```
 yarn install
