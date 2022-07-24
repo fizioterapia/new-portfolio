@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
+import VueMeta from 'vue-meta'
+
 import App from './App.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -11,4 +13,4 @@ library.add([faBars, faEnvelope, faHouse, faBarsProgress, faAddressCard, faTeleg
 import router from './_router'
 import store from './_store'
 
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(store).use(router).mount('#app')
+createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(store).use(router).use(VueMeta).mount('#app')
