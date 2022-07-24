@@ -2,7 +2,7 @@ div.contact {
     display: flex;
     flex-direction: column;
 
-    width: 50%;
+    width: clamp(50%, 400px, 90%);
     height: 100%;
 
     margin: 0 auto;
