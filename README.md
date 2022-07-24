@@ -36,5 +36,12 @@ yarn build
 yarn lint
 ```
 
+### Deploy application to Webserver
+```
+[INFO] You need to create your own deploy.sh script
+
+yarn deploy
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
