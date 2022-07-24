@@ -62,7 +62,7 @@
     },
     watch: {
       $route (to) {
-        document.title = "Portfolio - " + to.meta.title;
+        document.title = "fizi.pw - " + to.meta.title;
         this.navVisible = false;
       }
     },
