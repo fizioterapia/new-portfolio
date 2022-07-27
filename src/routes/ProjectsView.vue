@@ -80,7 +80,7 @@ export default {
                         },
                         {
                             name: "Preview",
-                            href: "https://fizi.pw/yabtl/"
+                            href: "https://projects.fizi.pw/yabtl/"
                         }
                     ]
                 },
