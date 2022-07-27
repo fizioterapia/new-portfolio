@@ -37,6 +37,10 @@ const routes = [
       title: 'Contact',
     },
     component: ContactView
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ]
 
